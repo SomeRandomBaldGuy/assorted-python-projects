@@ -65,24 +65,48 @@ def play_again():
           return False
      else:
           print ("You must choose yes or no.")
+          play_again()
 
 #------------------
 
+#Key-Value pairs for checking against user supplied answers.
 questions = {
      "Who designed the 'C' programming language?: ": "B",
      "Who originally wrote the Linux Kernel?: ": "C",
      "Which of the following is a popular enterprise version of GNU/Linux?: ": "A",
      "When was the first offical realease of the Linux Kernel?: ": "D",
-     "Who is the mascot of the Linux Kernel?: ": "B"
+     "Who is the mascot of the Linux Kernel?: ": "B",
+     "What service typically uses the networking port '22'?: ": "A",
+     "Which of the following is a commonly used Web Server application?: ": "D"
 }
 
+#2D List of the possible answers for the given questions.
 options = [["A. Steve Wozniak", "B. Dennis Ritchie", "C. Richard Stallman", "D. Bill Gates"],
           ["A. Ken Thompson", "B. Steve Jobs", "C. Linus Torvalds", "D. Brian Kernighan"],
           ["A. Red Hat Enterprise Linux", "B. Ubuntu Linux", "C. Arch Linux", "D. Slackware Linux"],
           ["A. 1983", "B. 1975", "C. 1998", "D. 1991"],
-          ["A. Spot", "B. Tux", "C. Rufus", "D. Buddy"]]
+          ["A. Spot", "B. Tux", "C. Rufus", "D. Buddy"],
+          ["A. SSH", "B. FTP", "C. HTTPS", "D. DNS"],
+          ["A. FileZilla", "B. Thunderbird", "C. VLC", "D. Apache"]]
 
 quiz()
 
 while play_again():
      quiz()
+          
+###################################################################################################
+#                                                                                                 #
+#     _  __             _          _   _             _      _  _             _                    #
+#    | |/ / ___ __   __(_) _ __   | | | | _   _   __| |  __| || |  ___  ___ | |_  ___   _ __      #
+#    | ' / / _ \\ \ / /| || '_ \  | |_| || | | | / _` | / _` || | / _ \/ __|| __|/ _ \ | '_ \     #
+#    | . \|  __/ \ V / | || | | | |  _  || |_| || (_| || (_| || ||  __/\__ \| |_| (_) || | | |    #
+#    |_|\_\\___|  \_/  |_||_| |_| |_| |_| \__,_| \__,_| \__,_||_| \___||___/ \__|\___/ |_| |_|    #
+#                                                                                                 #
+#             ____   ____    _             _____           ____     ___    ____    _____          #
+#            / ___| |  _ \  | |   __   __ |___ /          |___ \   / _ \  |___ \  |___ /          #
+#           | |  _  | |_) | | |   \ \ / /   |_ \   _____    __) | | | | |   __) |   |_ \          #
+#           | |_| | |  __/  | |___ \ V /   ___) | |_____|  / __/  | |_| |  / __/   ___) |         #
+#            \____| |_|     |_____| \_/   |____/          |_____|  \___/  |_____| |____/          #
+#                                                                                                 #
+#                                                                                                 #
+###################################################################################################
